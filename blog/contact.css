@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: #c31432!important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432)!important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+section{
+    padding: 40px 15%;
+}
+.con{
+    background: color #343223; 
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+.con-image img{
+    max-width: 100%;
+    width: 720px;
+    height:auto;
+    border-radius: 11px;
+}
+.con-form h1{
+    font-size: 80px;
+    color: #f05;
+    margin-bottom: 20px;
+}
+.con-form p{
+    color: #0a2de0bf;
+    letter-spacing: 1px;
+    line-height: 56px;
+    font-size: 1.8 rem;
+    margin-bottom:3.8rem ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.con-form form{
+    position: relative;
+}
+.con-form form input,
+form textarea{
+    width: 100%;
+    padding: 16px;
+    border:none;
+    outline: none;
+    background-color: #2e0d0d;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    border-radius: 10px;
+}
+.con-form textarea{
+    resize:none;
+    height: 200px;
+}
+button{
+    display: inline-block;
+    background: #f9004d;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 9px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease.20s;
+    cursor: pointer;
+}
+button:hover{
+    border:9px solid #f9004d;
+    background: transparent;
+    transform: scale(1.1 );
+}
+@media(max-width:1570px){
+    section{
+        padding: 80px 3%;
+        transition: .2s;
+    }
+    .con-form h1{
+        font-size: 60px;
+    }
+    .con-form p{
+        margin-bottom: 3rem;
+    }
+}
+@media(max-width:1090px){
+    .contact{
+        grid-gap:2rem;
+        transition:.3s ;
+    }
+}
+@media(max-width:1090px){
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .con-form{
+        order:2;
+    }
+    .con-img{
+        max-width:100%;
+        width: 100%;
+        height:30px ;
+    }
+}
